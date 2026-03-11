@@ -4,10 +4,10 @@ import time
 from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup
 
 # 🔐 Hardcoded credentials (from you)
-BOT_TOKEN = 8452774752:AAF3gIc33ahqrgw4wb4WqtI8-fsg9QMz-o8
-GROUP_ID = -1002995417831
-PANEL_USERNAME = 'Shoaib1212'
-PANEL_PASSWORD = 'Shoaib1212'
+BOT_TOKEN = 8799150227:AAEM7HLL9m_fzONkhLYYEdVHAl2jUh4PPzU
+GROUP_ID = -1003543577960
+PANEL_USERNAME = 'otpcookers'
+PANEL_PASSWORD = 'otpcookers'
 
 bot = Bot(token=BOT_TOKEN)
 
@@ -20,8 +20,7 @@ def get_buttons():
 
 def login_panel():
     session = requests.Session()
-    login_url = "http://www.roxysms.net/Login"
-
+    login_url = "http://www.timesms.net/login"
     # Step 1: Load login page to get captcha
     login_page = session.get(login_url)
     soup = BeautifulSoup(login_page.text, 'html.parser')
@@ -55,7 +54,7 @@ def login_panel():
         return None
 
 def fetch_otps(session):
-    otp_url = "http://www.roxysms.net/client/SMSCDRStats"
+    otp_url = "http://www.timesms.net/client/SMSCDRStats"
     response = session.get(otp_url)
     soup = BeautifulSoup(response.text, 'html.parser')
 
