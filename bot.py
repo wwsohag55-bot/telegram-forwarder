@@ -4,23 +4,23 @@ import time
 from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup
 
 # 🔐 Hardcoded credentials (from you)
-BOT_TOKEN = 8452774752:AAF3gIc33ahqrgw4wb4WqtI8-fsg9QMz-o8
-GROUP_ID = -1002995417831
-PANEL_USERNAME = 'Shoaib1212'
-PANEL_PASSWORD = 'Shoaib1212'
+BOT_TOKEN = 8341698379:AAHNFF7c3gUlXD_OBAEqDC9kQjTFGxyZwss
+GROUP_ID = -1003543577960
+PANEL_USERNAME = 'otpcookers'
+PANEL_PASSWORD = 'otpcookers'
 
 bot = Bot(token=BOT_TOKEN)
 
 def get_buttons():
     keyboard = [
-        [InlineKeyboardButton("✨ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫", url="https://t.me/Rolex_inxide")],
-        [InlineKeyboardButton("⚡ 𝐍𝐮𝐦𝐛𝐞𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/Rolex_Numbers_Hub")]
+        [InlineKeyboardButton("✨ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫", url="https://t.me/sohag148")],
+        [InlineKeyboardButton("⚡ 𝐍𝐮𝐦𝐛𝐞𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://https://t.me/cookerszone")]
     ]
     return InlineKeyboardMarkup(keyboard)
 
 def login_panel():
     session = requests.Session()
-    login_url = "http://www.roxysms.net/Login"
+    login_url = "http://www.timesms.net/login"
 
     # Step 1: Load login page to get captcha
     login_page = session.get(login_url)
@@ -55,7 +55,7 @@ def login_panel():
         return None
 
 def fetch_otps(session):
-    otp_url = "http://www.roxysms.net/client/SMSCDRStats"
+    otp_url = "http://www.timesms.net/client/SMSCDRStats"
     response = session.get(otp_url)
     soup = BeautifulSoup(response.text, 'html.parser')
 
@@ -79,7 +79,7 @@ def fetch_otps(session):
 
 def format_message(app, otp_text):
     message = (
-        f"🔐 *𝐑𝐎𝐋𝐄𝐗 𝐎𝐓𝐏 𝐑𝐄𝐂𝐄𝐈𝐕𝐄𝐃*\n\n"
+        f"🔐 *Cookers 𝐎𝐓𝐏 𝐑𝐄𝐂𝐄𝐈𝐕𝐄𝐃*\n\n"
         f"📲 *App:* {app}\n"
         f"📨 *Message:* `{otp_text}`\n\n"
         f"⏰ Time: {time.strftime('%Y-%m-%d %H:%M:%S')}\n\n"
