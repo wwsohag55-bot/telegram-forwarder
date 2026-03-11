@@ -15,7 +15,7 @@ load_dotenv()
 # 🌍 GLOBAL CONFIG (No Logic Change)
 # ============================================================
 
-BOT_NAME = os.environ.get("BOT_NAME", "Ims Master Bot")
+BOT_NAME = os.environ.get("BOT_NAME", "Cooker Zone")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 ADMIN_IDS = os.environ.get("ADMIN_IDS", "").split(",")
 TARGET_GROUP_ID = "-1003726042244" 
