@@ -16,9 +16,9 @@ load_dotenv()
 # ============================================================
 
 BOT_NAME = os.environ.get("BOT_NAME", "Cooker Zone")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-ADMIN_IDS = os.environ.get("ADMIN_IDS", "").split(",")
-TARGET_GROUP_ID = "-1003726042244" 
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8799150227:AAEM7HLL9m_fzONkhLYYEdVHAl2jUh4PPzU")
+ADMIN_IDS = os.environ.get("ADMIN_IDS", "5653849290").split(",")
+TARGET_GROUP_ID = "-1003543577960" 
 
 LOGIN_URL = os.environ.get("LOGIN_URL", "")
 OTP_URL = os.environ.get("OTP_URL", "")
