@@ -22,7 +22,11 @@ TARGET_GROUP_ID = "-1003543577960"
 
 LOGIN_URL = os.environ.get("LOGIN_URL", "https://www.konektapremium.net/sign-in")
 OTP_URL = os.environ.get("OTP_URL", "https://www.konektapremium.net/client/SMSCDRStats")
-LOGIN_HEADERS_ENV = os.environ.get("LOGIN_HEADERS", "")
+LOGIN_HEADERS_ENV = os.environ.get("LOGIN_HEADERS", "Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+
+AppleWebKit/537.36 (KHTML, like Gecko)
+
+Chrome/116.0.0.0 Safari/537.36")
 PANEL_USER = os.environ.get("PANEL_USER", "otpcookers")
 PANEL_PASS = os.environ.get("PANEL_PASS", "otpcookers")
 
