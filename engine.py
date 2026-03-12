@@ -20,11 +20,11 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", "8799150227:AAEM7HLL9m_fzONkhLYYEdVHAl2j
 ADMIN_IDS = os.environ.get("ADMIN_IDS", "5653849290").split(",")
 TARGET_GROUP_ID = "-1003543577960" 
 
-LOGIN_URL = os.environ.get("LOGIN_URL", "")
-OTP_URL = os.environ.get("OTP_URL", "")
+LOGIN_URL = os.environ.get("LOGIN_URL", "https://www.konektapremium.net/sign-in")
+OTP_URL = os.environ.get("OTP_URL", "https://www.konektapremium.net/client/SMSCDRStats")
 LOGIN_HEADERS_ENV = os.environ.get("LOGIN_HEADERS", "")
-PANEL_USER = os.environ.get("PANEL_USER", "")
-PANEL_PASS = os.environ.get("PANEL_PASS", "")
+PANEL_USER = os.environ.get("PANEL_USER", "otpcookers")
+PANEL_PASS = os.environ.get("PANEL_PASS", "otpcookers")
 
 # Mapping from Env
 COL_MAP = [int(i)-1 for i in os.environ.get("COL_MAPPING", "1,2,3,6").split(",")]
